@@ -19,14 +19,14 @@ WA.onInit().then(() => {
   });
 
   WA.room.area.onEnter("auditorium-focus").subscribe(() => {
-    WA.room.hideLayer("facade-furniture-bg");
-    WA.room.hideLayer("facade-furniture-fg");
-    WA.room.hideLayer("facade");
+    WA.room.hideLayer("auditorium-furniture-bg");
+    WA.room.hideLayer("auditorium-furniture-fg");
+    WA.room.hideLayer("auditorium-wall");
   });
   WA.room.area.onLeave("auditorium-focus").subscribe(() => {
-    WA.room.showLayer("facade-furniture-bg");
-    WA.room.showLayer("facade-furniture-fg");
-    WA.room.showLayer("facade");
+    WA.room.showLayer("auditorium-furniture-bg");
+    WA.room.showLayer("auditorium-furniture-fg");
+    WA.room.showLayer("auditorium-wall");
   });
 }).catch(e => console.error(e));
 
