@@ -9,13 +9,9 @@ WA.onInit().then(() => {
 
   WA.room.onEnterLayer("auditorium-zone").subscribe(() => {
     WA.room.hideLayer("auditorium-roof");
-    WA.room.hideLayer("auditorium-walls");
-    WA.room.hideLayer("auditorium-sign");
   });
   WA.room.onLeaveLayer("auditorium-zone").subscribe(() => {
     WA.room.showLayer("auditorium-roof");
-    WA.room.showLayer("auditorium-walls");
-    WA.room.showLayer("auditorium-sign");
   });
 
   WA.room.area.onEnter("auditorium-focus").subscribe(() => {
