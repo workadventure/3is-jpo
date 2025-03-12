@@ -197,17 +197,17 @@
         {
          "name":"mapDescription",
          "type":"string",
-         "value":"Univers des JPO 3iS"
+         "value":"Univers JV pour la eJPO de 3iS"
         }, 
         {
          "name":"mapImage",
          "type":"string",
-         "value":"univers.png"
+         "value":"univers-jv.png"
         }, 
         {
          "name":"mapName",
          "type":"string",
-         "value":"Univers"
+         "value":"Univers JV"
         }, 
         {
          "name":"script",
