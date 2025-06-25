@@ -6,7 +6,9 @@ console.log('Script started successfully');
 WA.onInit().then(() => {
   console.log('Scripting API ready');
   console.log('Player tags: ',WA.player.tags)
-
+  if (WA.player.tags.includes("admin")) {
+      WA.player.setOutlineColor(48, 48, 47);
+  }
   WA.room.onEnterLayer("auditorium-zone").subscribe(() => {
     WA.room.hideLayer("auditorium-roof");
   });
